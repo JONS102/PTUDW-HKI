@@ -1,5 +1,5 @@
 {
-    "name": "Dethicuoiki1",
+    "name": "dethicuoiki1",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -16,6 +16,15 @@
         "pg": "^8.16.0",
         "pg-hstore": "^2.3.4",
         "sequelize": "^6.37.7"
-    }
-
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JONS102/PTUDW-HKI.git"
+    },
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/JONS102/PTUDW-HKI/issues"
+    },
+    "homepage": "https://github.com/JONS102/PTUDW-HKI#readme"
 }

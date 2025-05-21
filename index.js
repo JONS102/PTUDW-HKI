@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const expressHbs = require('express-handlebars');
+
+app.use(express.static(__dirname + '/public'));
 
 app.engine("hbs",
     expressHbs.engine({
@@ -10,9 +13,9 @@ app.engine("hbs",
     })
 );
 app.set("view engine", "hbs");
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello World!');
+// });
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost: ${port}`);
