@@ -74,18 +74,140 @@
 				</div>
 			</div>
 		</div>
+		<h1>Câu 3 Mức độ dễ</h1>
+		<div id="fh5co-featured" class="container-fluid">
+			<div class="row">
+				<div class="fh5co-grid">
+					{{#each foods}}
+					<div class="fh5co-v-half to-animate-2 bounceIn animated">
+						<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})"></div>
+						<div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+							<h2 class="text-dark">{{name}}</h2>
+							<span class="pricing">${{price}}</span>
+							<p>{{summary}}</p>
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+			</div>
+		</div>
+		<h1>Câu 3 Mức độ trung bình</h1>
+		<div id="fh5co-featured" class="container-fluid">
+    <div class="row">
+        <div class="fh5co-grid">
+            {{#each foods}}
+                <div class="fh5co-v-half">
+                    {{#unless isRight}}
+                        <div class="fh5co-h-row-2 to-animate-2 bounceIn animated">
+                            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+                            </div>
+                            <div class="fh5co-v-col-2 fh5co-text arrow-left">
+                                <h2 class="text-dark">{{name}}</h2>
+                                <span class="pricing">${{price}}</span>
+                                <p>{{summary}}</p>
+                            </div>
+                        </div>
+                    {{else}}
+                        <div class="fh5co-h-row-2 fh5co-reversed to-animate-2 bounceIn animated">
+                            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+                            </div>
+                            <div class="fh5co-v-col-2 fh5co-text arrow-right">
+                                <h2 class="text-dark">{{name}}</h2>
+                                <span class="pricing">${{price}}</span>
+                                <p>{{summary}}</p>
+                            </div>
+                        </div>
+                    {{/unless}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+		<h1>Câu 3 Mức độ khó</h1>
+		<div id="fh5co-featured" class="container-fluid">
+			<div class="row">
+				<div class="fh5co-grid">
+					{{#with foods.[0]}}
+					<div class="fh5co-v-half to-animate-2 bounceIn animated">
+						<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})"></div>
+						<div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+							<h2 class="text-dark">{{name}}</h2>
+							<span class="pricing">${{price}}</span>
+							<p>{{summary}}</p>
+						</div>
+					</div>
+					{{/with}}
+					<div class="fh5co-v-half">
+						{{#with foods.[1]}}
+						<div class="fh5co-h-row-2 to-animate-2 bounceIn animated">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+							</div>
+							<div class="fh5co-v-col-2 fh5co-text arrow-left">
+								<h2 class="text-dark">{{name}}</h2>
+								<span class="pricing">${{price}}</span>
+								<p>{{summary}}</p>
+							</div>
+						</div>
+						{{/with}}
+						{{#with foods.[2]}}
+						<div class="fh5co-h-row-2 fh5co-reversed to-animate-2 bounceIn animated">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+							</div>
+							<div class="fh5co-v-col-2 fh5co-text arrow-right">
+								<h2 class="text-dark">{{name}}</h2>
+								<span class="pricing">${{price}}</span>
+								<p>{{summary}}</p>
+							</div>
+						</div>
+						{{/with}}
+					</div>
+
+					<div class="fh5co-v-half">
+						{{#with foods.[3]}}
+						<div class="fh5co-h-row-2 fh5co-reversed to-animate-2 bounceIn animated">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+							</div>
+							<div class="fh5co-v-col-2 fh5co-text arrow-right">
+								<h2 class="text-dark">{{name}}</h2>
+								<span class="pricing">${{price}}</span>
+								<p>{{summary}}.</p>
+							</div>
+						</div>
+						{{/with}}
+						{{#with foods.[4]}}
+						<div class="fh5co-h-row-2 to-animate-2 bounceIn animated">
+							<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+							</div>
+							<div class="fh5co-v-col-2 fh5co-text arrow-left">
+								<h2 class="text-dark">{{name}}</h2>
+								<span class="pricing">${{price}}</span>
+								<p>{{summary}}.</p>
+							</div>
+						</div>
+						{{/with}}
+					</div>
+					{{#with foods.[5]}}
+					<div class="fh5co-v-half to-animate-2 bounceIn animated">
+						<div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})"></div>
+						<div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+							<h2 class="text-dark">{{name}}</h2>
+							<span class="pricing">${{price}}</span>
+							<p>{{summary}}</p>
+						</div>
+					</div>
+					{{/with}}
+
+				</div>
+			</div>
+		</div>
+
+
 		<div class="row mt-5">
 			<div class="col text-center">
 				<div class="block-27">
-					<ul>
-						<li><a href="#">&lt;</a></li>
-						<li class="active"><span>1</span></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">&gt;</a></li>
-					</ul>
+					{{{createPagination pagination leftText="&lt;" rightText="&gt;"}}}
+					
 				</div>
 			</div>
 		</div>
