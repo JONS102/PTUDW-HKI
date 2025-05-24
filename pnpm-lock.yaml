@@ -14,6 +14,9 @@ importers:
       express-handlebars:
         specifier: ^8.0.3
         version: 8.0.3
+      express-handlebars-paginate:
+        specifier: ^1.0.3
+        version: 1.0.3
       express-paginate:
         specifier: ^1.0.2
         version: 1.0.2
@@ -171,6 +174,9 @@ packages:
   etag@1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
+
+  express-handlebars-paginate@1.0.3:
+    resolution: {integrity: sha512-dj1d8ntEfneIU+gs//7s8KYpn7w6RQxovQ0ThSqO5ziqbhhlMaGex+vQgVHqCLYxWFXNrN2EEoMmQjJS07lBgg==}
 
   express-handlebars@8.0.3:
     resolution: {integrity: sha512-uzvrS2HRlhFNmq2dZb6EJahu2tg7trV9wuYOJrkIbstemozwOvNRa0idkHBjy62nPu6wao76AlhJ69YBIHfkEA==}
@@ -748,6 +754,8 @@ snapshots:
   escape-html@1.0.3: {}
 
   etag@1.8.1: {}
+
+  express-handlebars-paginate@1.0.3: {}
 
   express-handlebars@8.0.3:
     dependencies:

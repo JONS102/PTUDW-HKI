@@ -13,6 +13,7 @@
     "dependencies": {
         "express": "^5.1.0",
         "express-handlebars": "^8.0.3",
+        "express-handlebars-paginate": "^1.0.3",
         "express-paginate": "^1.0.2",
         "handlebars-paginate": "^0.1.0",
         "pg": "^8.16.0",
@@ -27,5 +28,6 @@
     "bugs": {
         "url": "https://github.com/JONS102/PTUDW-HKI/issues"
     },
-    "homepage": "https://github.com/JONS102/PTUDW-HKI#readme"
+    "homepage": "https://github.com/JONS102/PTUDW-HKI#readme",
+    "devDependencies": {}
 }

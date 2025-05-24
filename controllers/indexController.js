@@ -1,7 +1,6 @@
 const controller = {};
 const models = require("../models");
-
-controller.show = async(req, res) => {
+showData = async(req, res) => {
     let limit = 6;
     //page có thể truyền trên query string
     let page = isNaN(req.query.page) ? 1 : parseInt(req.query.page);
@@ -27,10 +26,27 @@ controller.show = async(req, res) => {
         totalRows,
     }
     res.render("index");
+}
+controller.show = async(req, res) => {
+    await showData(req, res); // lấy dữ liệu từ db
 };
 
-controller.reserve = (req, res) => {
-    res.render("index");
+controller.reserve = async(req, res) => {
+    let { name, email, message } = req.body;
+    try {
+        models.Reservation.create({
+            name,
+            email,
+            message,
+            submittedAt: new Date(),
+            checkstatus: false,
+        });
+        res.locals.message = "Đặt bàn thành công";
+    } catch (err) {
+        res.locals.message = "Đặt bàn thất bại, vui lòng thử lại";
+    }
+    await showData(req, res); // lấy dữ liệu từ db
+
 };
 
 module.exports = controller;
